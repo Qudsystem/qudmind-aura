@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+canvas {
+  display: block;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mask-gradient {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ensure smooth shape transitions */
+button, .hud-glass {
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}

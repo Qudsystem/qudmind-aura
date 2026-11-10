@@ -1,0 +1,7 @@
+{
+  "name": "QudMind Aura: Hand-Driven Particle Universe",
+  "description": "An interactive 3D particle system powered by Three.js and MediaPipe hand tracking. Control cosmic structures with your gestures, shifting between hearts, flowers, and celestial bodies through natural hand movements.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
